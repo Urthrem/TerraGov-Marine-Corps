@@ -72,6 +72,19 @@
 	contraband = list(/obj/item/reagent_container/food/drinks/ice = 10)
 	prices = list()
 
+/obj/machinery/vending/coffee_decrepit
+	name = "Hot Drinks machine"
+	desc = "A vending machine which used to dispense hot drinks."
+	//product_ads = "Have a drink!;Drink up!;It's good for you!;Would you like a hot joe?;I'd kill for some coffee!;The best beans in the galaxy.;Only the finest brew for you.;Mmmm. Nothing like a coffee.;I like coffee, don't you?;Coffee helps you work!;Try some tea.;We hope you like the best!;Try our new chocolate!;Admin conspiracies"
+	icon_state = "coffee-broken"
+	icon_vend = "coffee-broken"
+	vend_delay = 34
+	idle_power_usage = 0 //refrigerator - believe it or not, this is actually the average power consumption of a refrigerated vending machine according to NRCan.
+	vend_power_usage = 85000 //85 kJ to heat a 250 mL cup of coffee
+	products = list(/obj/item/reagent_container/food/drinks/coffee = 0,/obj/item/reagent_container/food/drinks/tea = 0,/obj/item/reagent_container/food/drinks/h_chocolate = 0)
+	contraband = list(/obj/item/reagent_container/food/drinks/ice = 0)
+	prices = list()
+
 
 
 
@@ -89,6 +102,20 @@
 					/obj/item/reagent_container/food/snacks/wrapped/booniebars = 6,
 					/obj/item/reagent_container/food/snacks/wrapped/chunk = 6,
 					/obj/item/reagent_container/food/snacks/wrapped/barcardine = 6)
+
+	prices = list()
+
+/obj/machinery/vending/snack_decrepit
+	name = "Hot Foods Machine"
+	desc = "A vending machine that used to be full of ready to cook meals, nothing left but dust now."
+	//product_slogans = "Kepler Crisps! Try a snack that's out of this world!;Eat an EAT!;Eat a Nanotrasen brand packaged hamburger.;Eat a Nanotrasen brand packaged hot dog.;Eat a Nanotrasen brand packaged burrito.;"
+	//product_ads = "Kepler Crisps! Try a snack that's out of this world!;Eat an EAT!"
+	icon_state = "snack-broken"
+	products = list(/obj/item/reagent_container/food/snacks/packaged_burger = 0,
+					/obj/item/reagent_container/food/snacks/packaged_burrito = 0,
+					/obj/item/reagent_container/food/snacks/packaged_hdogs =0,
+					/obj/item/reagent_container/food/snacks/kepler_crisps = 0,
+					/obj/item/reagent_container/food/snacks/eat_bar = 0)
 
 	prices = list()
 
